@@ -183,7 +183,7 @@ Your turn: Make a new column called `cc` that pastes the country name followed b
 
 ```{r}
 gapminder %>%
-  mutate(paste(cc = country, continent, sept = ", "))
+  mutate(cc = (paste(country, continent, sept = ", "))
 ``
 
 These functions we've seen are called __vectorized functions__.
