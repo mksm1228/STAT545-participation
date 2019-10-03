@@ -145,7 +145,7 @@ experiment <- tibble(
   measurement_1 = runif(6),
   measurement_2 = runif(6)
 )
-experiment %>% expand(name, trt, rep)
+experiment %>% complete(name, trt, rep)
 ```
 
 
