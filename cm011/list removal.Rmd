@@ -1,0 +1,37 @@
+---
+title: "gapminder test"
+author: "Martin"
+date: "10/8/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+library("tidyverse")
+gapminder_csv <- read_csv('./gapminder_sum.csv')
+# on winders: .\gapminder_sum.csv
+
+read_csv('./test/tes/te/t/gapminder_sum.csv')
+
+# another way using here
+# platmfrom agnostic, dir-structure agnostic 
+
+write_csv(here::here(","test","te","t","gapminder_sum.csv"))
+
+# couple more things about here
+set_here()
+
+view(gapminder_csv)
+
+ls() 
+list
+list = ls()
+remove(list=ls())
+ls()
+
+library("tidyverse")
+library("here")
+ls()
+

@@ -1,0 +1,57 @@
+---
+title: "Untitled"
+author: "Martin"
+date: "10/8/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library("here")
+library("readxl")
+library("tidyverse")
+```
+
+
+```{r}
+data_url <- "http://gattonweb.uky.edu/sheather/book/docs/datasets/GreatestGivers.xls"
+```
+
+```{r}
+download.file(url = data_url, 
+              destfile = paste('./datasets/', file_name))
+```
+
+              
+# Task: Change above to use the "here::here" package
+
+```{r}
+download.file(url = data_url,
+                destfile = here::here("cm011", "greatestGivers.xls"))
+```
+
+
+
+```{r}
+philanthropists <- read_excel(here::here
+("cm011", "GreatestGivers.xls"), trim_ws = TRUE)
+```
+
+View(philanthropists)
+
+mri_file = here("datasets", "Firas-MRI.xlsx")
+
+mri <- read_excel(mri_file, range = "A1:L12")
+
+view(mri)
+
+mri <- mri[, -10]
+
+mri<- mri %>%
+  pivot_longer(cols = 'Slice 1':'Slice 8',
+              names_to = 'slice_no',
+              values_to = 'value')
+              
