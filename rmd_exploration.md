@@ -3,7 +3,7 @@ title: "Tibble Exploration"
 author: "Martin"
 date: "10/09/2019"
 output: 
-  html_document:
+  github_document:
     keep_md: true
   
 ---
