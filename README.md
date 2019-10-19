@@ -9,7 +9,7 @@ Welcome to my STAT545 Participation Repository. The links to the files from each
 - [.md link](https://github.com/mksm1228/STAT545-participation/blob/master/navigating_github.md)
 
 **Class Meeting 2: Introduction to R**
-- [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm002_r_exploration.Rmd)
+- [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm002_r_exploration.R)
 
 **Class Meeting 3: Authoring**
 - [x] Populate ```navigating_github.md``` document with some markdown features
@@ -62,7 +62,7 @@ Welcome to my STAT545 Participation Repository. The links to the files from each
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm011/gapminder%20sum.Rmd)
 
 **Class Meeting 12: Working with Factors in R**
-- [x] complete cm012-exercise.Rmd worksheet
+- [x] Complete cm012-exercise.Rmd worksheet
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm012-exercise.Rmd)
 - [html link](https://mksm1228.github.io/STAT545-participation/cm012-exercise.html)
 
