@@ -1,7 +1,7 @@
 ---
 # STAT 545-participation
 
-Welcome to my STAT545 Participation Repository. The links to the files from each class meeting are posted below. 
+Welcome to my STAT545 Participation Repository. I have placed the files for each class meeting into their corresponding folders. For example, files for cm002 will be in a folder called "cm002." For ease of access, the links to the files required from each class meeting are posted below. 
 
 **Class Meeting 1: Introduction to STAT545 and Github**
 - [x] Register a Github account
