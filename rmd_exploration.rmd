@@ -16,7 +16,8 @@ library(DT)
 ## Print out gapminder data:
 
 ```{r load, warning = FALSE, echo=FALSE}
-gapminder
+x <- gapminder
+x
 ```
 <!--This is a comment -->
 
