@@ -28,37 +28,49 @@ Welcome to my STAT545 Participation Repository. The links to the files from each
 - Nothing was required for submission.
 
 **Class Meeting 5: Intro to Plotting with ggplot2, Part I**
+- [x] Complete cm005-ggplot_intro.Rmd worksheet
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm005-exercise.Rmd)
 - [html link](https://mksm1228.github.io/STAT545-participation/cm005-exercise.html)
 
 **Class Meeting 6: Intro to Data Wrangling, Part I**
+- [x] Complete cm006-dplyr_exercise.Rmd worksheet
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm006-exercise.Rmd)
 - [html link](https://mksm1228.github.io/STAT545-participation/cm006-exercise.html)
 
 **Class Meeting 7: Intro to Data Wrangling, Part II**
+- [x] Complete cm007-exercise.Rmd worksheet
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm007-exercise.Rmd)
 - [html link](https://mksm1228.github.io/STAT545-participation/cm007-exercise.html)
 
 **Class Meeting 8: Intro to Plotting with ggplot2, Part II**
+- [x] Complete cm008-exercise.Rmd worksheet
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm008-exercise.Rmd)
 - [html link](https://mksm1228.github.io/STAT545-participation/cm008-exercise)
+
 **Class Meeting 9: Tidy Data and Pivoting**
+- [x] Complete cm009-exercise.Rmd worksheet
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm009-exercise.Rmd)
 - [html link](https://mksm1228.github.io/STAT545-participation/cm009-exercise.nb.html)
 
 **Class Meeting 10: Tibble Joins**
+- [x] Complete cm010-exercise.Rmd worksheet. 
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm010-exercise.Rmd)
 - [html link](https://mksm1228.github.io/STAT545-participation/cm010-exercise.html)
+
 **Class Meeting 11: File Input/Output (I/O)**
+- Complete the steps described in [lesson 11](https://stat545guidebook.netlify.com/file-inputoutput-io.html)
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm011/gapminder%20sum.Rmd)
 
 **Class Meeting 12: Working with Factors in R**
+- [x] complete cm012-exercise.Rmd worksheet
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm012-exercise.Rmd)
 - [html link](https://mksm1228.github.io/STAT545-participation/cm012-exercise.html)
 
 **Class Meeting 13: Effective Visualizations**
+- [x] Complete cm013-exercise.Rmd worksheet
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm013.Rmd)
 
 **Class Meeting 14: The Model-Fitting Paradigm R**
+- [x] Complete cm014-exercise.Rmd worksheet
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm014-exercise.Rmd)
 - [html link](https://mksm1228.github.io/STAT545-participation/cm014-exercise)
