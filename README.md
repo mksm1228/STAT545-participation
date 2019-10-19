@@ -18,7 +18,15 @@ Welcome to my STAT545 Participation Repository. The links to the files from each
 **Class Meeting 3: Authoring**
 - [x] Populate ```navigating_github.md``` document with some markdown features
 - [x] Convert the ```.md file into both ```pdf``` and ```html``` and add them to your repo
-- [Link]
+  - [html link](https://mksm1228.github.io/STAT545-participation/navigating_github.html)
+  - [pdf link](https://github.com/mksm1228/STAT545-participation/blob/master/navigating_github.pdf)
+- [x] Upload ```rmd_exploration.Rmd and its output formats(md, pdf and html)
+  - [md link](https://github.com/mksm1228/STAT545-participation/blob/master/rmd_exploration.md)
+  - [pdf link](https://github.com/mksm1228/STAT545-participation/blob/master/rmd_exploration.pdf). Please note that the DT function will not work with pdf format, so I did not perform wrap mtcars in a datatable.
+  - [html link](https://mksm1228.github.io/STAT545-participation/rmd_exploration.html)
+- [x] Upload ```rmd_exploration-slides.Rmd both as Rmd and html(or pdf) formats
+  - [.rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/rmd_exploration_slides.Rmd)
+  - [html link](https://mksm1228.github.io/STAT545-participation/rmd_exploration_slides.html#1)
 
 **Class Meeting 4: The Version Control Workflow**
 - Nothing was required for submission.
