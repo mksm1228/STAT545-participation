@@ -15,10 +15,6 @@ install.packages("devtools")
 devtools::install_github("JoeyBernhardt/singer")
 ```
 
-```{r}
-read_csv("https://raw.githubusercontent.com/STAT545-UBC/STAT545-home/master/content/loc.csv")
-read_csv("https://raw.githubusercontent.com/STAT545-UBC/STAT545-home/master/content/singer.csv")
-```
 
 Load required packages:
 
@@ -26,8 +22,7 @@ Load required packages:
 library(tidyverse)
 library(singer)
 knitr::opts_chunk$set(fig.width=4, fig.height=3, warning = FALSE, fig.align = "center")
-read_csv("https://raw.githubusercontent.com/STAT545-UBC/STAT545-home/master/content/loc.csv")
-read_csv("https://raw.githubusercontent.com/STAT545-UBC/STAT545-home/master/content/singer.csv")
+
 ```
 
 <!---The following chunk allows errors when knitting--->
