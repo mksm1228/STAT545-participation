@@ -1,7 +1,7 @@
 ---
 output:
   pdf_document: default
-  html_document: default
+  github_document: default
 ---
 # Helpful Links
 
