@@ -4,17 +4,36 @@ author: "Martin"
 date: "10/8/2019"
 output: html_document
 ---
+
+```{r}
+library(gapminder)
+library(here)
+```
+
+here()
+
+```{r}
 gapminder_sum <- gapminder %>% 
-group_by(continent) %>%
-summarize(ave_lifeExp) = mean
-(lifeExp))
+                    group_by(continent) %>%
+                    summarize(ave_lifeExp = mean(lifeExp))
+```
 
 view(gapminder_sum)
-write_csv(gapminder_sum, here::here)
-("gapminder_sum.csv"))
+
+```{r}
+here()
+write_csv(gapminder_sum, here::here("cm011",
+"gapminder_sum.csv"))
+```
 
 gapminder_sum %>%
 ggplot(aes(x = continent,
 y = ave_lifeExp)) +
 geom_point()+
 theme_bw()
+
+```{r}
+read_csv(here("cm011", "gapminder_sum.csv"))
+```
+
+
