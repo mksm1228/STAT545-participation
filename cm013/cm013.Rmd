@@ -40,7 +40,7 @@ Write some notes here about what "effective visualizations" means to you. Think 
 >
 > Very strong, strong, weak, very weak, do not know
 
-
+weak
 
 - <<How to measure motivation? German workers don't work the most on average compared to the other EU nations. The graph lacks information, how many people were sampled, where is the standard deviation?>>
 
@@ -78,11 +78,11 @@ Great resource for selecting the right plot: https://www.data-to-viz.com/ ; enco
 
 We will be filling these principles in together as a class
 
-1. 
-1. 
-1. 
-1. 
-1. 
+1. Remove background, remove redundant labels
+1. Remove borders
+1. Reduce colors, remove special effects
+1. Remove bolding 
+1. Lighten labels, lighten lines or remove lines, direct labels 
 
 ### Make a great plot worse
 
@@ -96,7 +96,6 @@ Did you know that you can make interactive graphs and plots in R using the plotl
 
 This is a preview of what we'll be doing in STAT 547 - making dynamic and interactive dashboards using R!
 ```{r}
-install.packages('plotly')
 library(tidyverse)
 library(gapminder)
 library(plotly)
@@ -111,9 +110,7 @@ p %>%
 #plot.ly syntax
 gapminder %>%
   plot_ly(x = ~gdpPercap, y = ~lifeExp, color = ~continent, type = "scatter", mode = "markers")
-sys.setenv("plotly_username"="mksm1228")
-sys.setenv("plotly_api_key"=)
-api
+
 ```
 
 
