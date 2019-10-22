@@ -401,7 +401,7 @@ devtools::install_github(&quot;JoeyBernhardt/singer&quot;)</code></pre>
 <div id="exercise-1-singer" class="section level2">
 <h2>Exercise 1: <code>singer</code></h2>
 <p>The package <code>singer</code> comes with two smallish data frames about songs. Let’s take a look at them (after minor modifications by renaming and shuffling):</p>
-<pre class="r"><code>(time &lt;- as_tibble(songs) %&gt;% 
+<pre class="r"><code>(time &lt;- as_tibble(songs) %&gt;%  # putting songs into a tibble and then putting it into a variable called time
    rename(song = title))</code></pre>
 <pre><code>## # A tibble: 22 x 3
 ##    song                             artist_name      year
@@ -418,8 +418,8 @@ devtools::install_github(&quot;JoeyBernhardt/singer&quot;)</code></pre>
 ## 10 Leaves And Sand                  The Boo Radleys  1993
 ## # ... with 12 more rows</code></pre>
 <pre class="r"><code>(album &lt;- as_tibble(locations) %&gt;% 
-   select(title, everything()) %&gt;% 
-   rename(album = release,
+   select(title, everything()) %&gt;%  
+   rename(album = release, # rename the columns
           song  = title))</code></pre>
 <pre><code>## # A tibble: 14 x 4
 ##    song                        artist_name   city        album             
@@ -481,7 +481,7 @@ devtools::install_github(&quot;JoeyBernhardt/singer&quot;)</code></pre>
 <li>Go ahead and add the corresponding albums to the <code>time</code> tibble, being sure to preserve rows even if album info is not readily available.</li>
 </ol>
 <pre class="r"><code>time %&gt;% 
-  left_join(album, by = c(&quot;song&quot;, &quot;artist_name&quot;))</code></pre>
+  left_join(album, by = c(&quot;song&quot;, &quot;artist_name&quot;)) # joins the second table from the left</code></pre>
 <pre><code>## # A tibble: 22 x 5
 ##    song                artist_name     year city        album              
 ##    &lt;chr&gt;               &lt;chr&gt;          &lt;int&gt; &lt;chr&gt;       &lt;chr&gt;              
@@ -500,7 +500,7 @@ devtools::install_github(&quot;JoeyBernhardt/singer&quot;)</code></pre>
 <li>Which songs do we have “year”, but not album info?</li>
 </ol>
 <pre class="r"><code>time %&gt;% 
-  semi_join(album, by = &quot;song&quot;)</code></pre>
+  semi_join(album, by = &quot;song&quot;)  </code></pre>
 <pre><code>## # A tibble: 13 x 3
 ##    song                                               artist_name      year
 ##    &lt;chr&gt;                                              &lt;chr&gt;           &lt;int&gt;
@@ -521,7 +521,7 @@ devtools::install_github(&quot;JoeyBernhardt/singer&quot;)</code></pre>
 <li>Which artists are in <code>time</code>, but not in <code>album</code>?</li>
 </ol>
 <pre class="r"><code>time %&gt;% 
-  anti_join(album, by = &quot;artist_name&quot;)</code></pre>
+  anti_join(album, by = &quot;artist_name&quot;) # finds which artists are in time, but not in album</code></pre>
 <pre><code>## # A tibble: 5 x 3
 ##   song                  artist_name   year
 ##   &lt;chr&gt;                 &lt;chr&gt;        &lt;int&gt;
@@ -633,8 +633,7 @@ devtools::install_github(&quot;JoeyBernhardt/singer&quot;)</code></pre>
 </ol>
 <pre class="r"><code>bind_rows(
   mutate(y, day = &quot;Day 1&quot;),
-  mutate(z, day = &quot;Day 2&quot;)
-)</code></pre>
+  mutate(z, day = &quot;Day 2&quot;))</code></pre>
 <pre><code>## # A tibble: 6 x 3
 ##   x1       x2 day  
 ##   &lt;chr&gt; &lt;int&gt; &lt;chr&gt;

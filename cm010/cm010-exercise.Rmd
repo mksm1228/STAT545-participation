@@ -36,14 +36,14 @@ knitr::opts_chunk$set(error = TRUE)
 The package `singer` comes with two smallish data frames about songs. Let's take a look at them (after minor modifications by renaming and shuffling):
 
 ```{r}
-(time <- as_tibble(songs) %>% 
+(time <- as_tibble(songs) %>%  # putting songs into a tibble and then putting it into a variable called time
    rename(song = title))
 ```
 
 ```{r}
 (album <- as_tibble(locations) %>% 
-   select(title, everything()) %>% 
-   rename(album = release,
+   select(title, everything()) %>%  
+   rename(album = release, # rename the columns
           song  = title))
 ```
 
@@ -61,21 +61,21 @@ time %>%
 
 ```{r}
 time %>% 
-  left_join(album, by = c("song", "artist_name"))
+  left_join(album, by = c("song", "artist_name")) # joins the second table from the left
 ```
 
 3. Which songs do we have "year", but not album info?
 
 ```{r}
 time %>% 
-  semi_join(album, by = "song")
+  semi_join(album, by = "song")  
 ```
 
 4. Which artists are in `time`, but not in `album`?
 
 ```{r}
 time %>% 
-  anti_join(album, by = "artist_name")
+  anti_join(album, by = "artist_name") # finds which artists are in time, but not in album
 ```
 
 
@@ -136,8 +136,7 @@ intersect(y, z)
 ```{r}
 bind_rows(
   mutate(y, day = "Day 1"),
-  mutate(z, day = "Day 2")
-)
+  mutate(z, day = "Day 2"))
 ```
 
 3. The rows contained in `z` are bad! Remove those rows from `y`.
