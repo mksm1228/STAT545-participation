@@ -59,7 +59,7 @@ Welcome to my STAT545 Participation Repository. I have placed the files for each
 - [html link](https://mksm1228.github.io/STAT545-participation/cm010/cm010-exercise.html)
 
 **Class Meeting 11: File Input/Output (I/O)**
-- Complete the steps described in [lesson 11](https://stat545guidebook.netlify.com/file-inputoutput-io.html)
+- [x] Complete the steps described in [lesson 11](https://stat545guidebook.netlify.com/file-inputoutput-io.html)
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm011/gapminder%20sum.Rmd)
 
 **Class Meeting 12: Working with Factors in R**
