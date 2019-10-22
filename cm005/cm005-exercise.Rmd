@@ -85,7 +85,7 @@ Produce a line chart showing the concentration over time. Specifically, the plot
 Fill in the blanks to obtain the plot:
 
 ```{r, fig.width = 5, fig.height = 2}
-p <- ggplot(mauna, aes(month, conc)) +
+p <- ggplot(mauna, aes(month, conc)) + # plotting month vs conc 
   geom_line()+
   xlab("Month")+
   ylab("[CO2]")
