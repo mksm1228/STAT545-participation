@@ -70,7 +70,7 @@ Welcome to my STAT545 Participation Repository. I have placed the files for each
 **Class Meeting 13: Effective Visualizations**
 - [x] Complete cm013-exercise.Rmd worksheet
 - [.Rmd link](https://github.com/mksm1228/STAT545-participation/blob/master/cm013/cm013.Rmd)
-- [html link](https://mksm1228.github.io/STAT545-participation/cm013/cm013-exercise.html)
+- [html link](https://mksm1228.github.io/STAT545-participation/cm013/cm013.html)
 
 **Class Meeting 14: The Model-Fitting Paradigm R**
 - [x] Complete cm014-exercise.Rmd worksheet
