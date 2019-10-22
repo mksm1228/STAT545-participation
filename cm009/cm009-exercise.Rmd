@@ -1,7 +1,9 @@
 ---
-title: "cm009 Exercises: tidy data"
-output: html_notebook
-editor_options: 
+title: 'cm009 Exercises: tidy data'
+output:
+  html_document:
+    df_print: paged
+editor_options:
   chunk_output_type: inline
 ---
 
@@ -32,7 +34,7 @@ lotr
 
 ```{r}
 (lotr_wide <- lotr %>% 
-  pivot_wider(id_cols = c(-Race, -Words), 
+  pivot_wider(id_cols = c(-Race, -Words), # - = anything but race and words 
               names_from = Race, 
               values_from = Words))
 ```
@@ -41,7 +43,7 @@ lotr
 
 ```{r}
 lotr_wide %>% 
-  pivot_longer(cols = c(-Film, -Gender), 
+  pivot_longer(cols = c(-Film, -Gender),  # anything but film and gender 
                names_to  = "Race", 
                values_to = "Words")
 ```
@@ -59,8 +61,8 @@ guest %>%
 
 ```{r}
 (guest_long <- guest %>% 
-  pivot_longer(cols      = c(-party, -name), 
-               names_to  = c(".value", "event" ),
+  pivot_longer(cols      = c(-party, -name), # anything but party and name 
+               names_to  = c(".value", "event" ), # .value preserves value 
                names_sep = "_"))
 ```
 
@@ -68,7 +70,7 @@ guest %>%
 
 ```{r}
 guest_long %>% 
-  separate(name, into = c("first", "last"), sep = " ") %>%
+  separate(name, into = c("first", "last"), sep = " ") %>% # separates first and last 
   unite(col = "name", first, last, sep = " ")
 ```
 
