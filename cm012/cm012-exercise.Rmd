@@ -13,7 +13,7 @@ knitr::opts_chunk$set(error = TRUE)
 library(gapminder)
 library(tidyverse)
 library(dplyr)
-library(forcats)
+library(forcats)  # for putting things into factors
 library(ggplot2)
  
 ```
@@ -38,7 +38,7 @@ Function `case_when()` is a tidier way to vectorise multiple `if_else()` stateme
 ```{r}
 gapminder %>% 
   filter(year == 1997) %>% 
-  mutate(life_level = case_when(lifeExp < 23 ~ "very low",
+  mutate(life_level = case_when(lifeExp < 23 ~ "very low", # assigning anything in lifeExp less than 23 to a factor called very low
                                 lifeExp < 48 ~ "low",
                                 lifeExp < 59 ~ "moderate",
                                 lifeExp < 70 ~ "high",
@@ -118,7 +118,7 @@ The function `droplevels()` operates on all the factors in a data frame or on a 
 
 ```{r}
 h_gap_dropped <- gap %>% 
-  droplevels()
+  droplevels() # drops unused levels
 
 h_gap_dropped$country %>%
   nlevels()

@@ -392,16 +392,16 @@ summary {
 
 <pre class="r"><code>library(gapminder)
 library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages ---------------------------------------------------- tidyverse 1.2.1 --</code></pre>
+<pre><code>## -- Attaching packages ---------------------------------------------------------------------------------------------- tidyverse 1.2.1 --</code></pre>
 <pre><code>## v ggplot2 3.2.1     v purrr   0.3.2
 ## v tibble  2.1.3     v dplyr   0.8.3
 ## v tidyr   1.0.0     v stringr 1.4.0
 ## v readr   1.3.1     v forcats 0.4.0</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------------------- tidyverse_conflicts() --
+<pre><code>## -- Conflicts ------------------------------------------------------------------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>library(dplyr)
-library(forcats)
+library(forcats)  # for putting things into factors
 library(ggplot2)</code></pre>
 <div id="motivating-the-need-for-factors-in-r" class="section level2">
 <h2>Motivating the need for factors in R</h2>
@@ -441,7 +441,7 @@ library(ggplot2)</code></pre>
 <p>Function <code>case_when()</code> is a tidier way to vectorise multiple <code>if_else()</code> statements. you can read more about this function <a href="https://dplyr.tidyverse.org/reference/case_when.html">here</a>.</p>
 <pre class="r"><code>gapminder %&gt;% 
   filter(year == 1997) %&gt;% 
-  mutate(life_level = case_when(lifeExp &lt; 23 ~ &quot;very low&quot;,
+  mutate(life_level = case_when(lifeExp &lt; 23 ~ &quot;very low&quot;, # assigning anything in lifeExp less than 23 to a factor called very low
                                 lifeExp &lt; 48 ~ &quot;low&quot;,
                                 lifeExp &lt; 59 ~ &quot;moderate&quot;,
                                 lifeExp &lt; 70 ~ &quot;high&quot;,
@@ -510,7 +510,7 @@ gap$country %&gt;%
 <p>What if we want to get rid of some levels that are “unused” - how do we do that?</p>
 <p>The function <code>droplevels()</code> operates on all the factors in a data frame or on a single factor. The function <code>forcats::fct_drop()</code> operates on a factor.</p>
 <pre class="r"><code>h_gap_dropped &lt;- gap %&gt;% 
-  droplevels()
+  droplevels() # drops unused levels
 
 h_gap_dropped$country %&gt;%
   nlevels()</code></pre>
