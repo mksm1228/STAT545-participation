@@ -64,7 +64,7 @@ The following is a tsibble (a special type of tibble containing time series data
 Execute this code to store the data in `mauna`:
 
 ```{r}
-(mauna <- tsibble::as_tsibble(co2) %>% 
+(mauna <- tsibble::as_tsibble(co2) %>% # putting co2 concentrations into a tsibble
    rename(month = index, conc = value))
 ```
 
@@ -102,7 +102,7 @@ The following code mistakenly puts the month variable on the y-axis. Fill in the
 
 ```{r, fig.width = 5, fig.height = 2}
 ggplot(mauna, aes(y = month)) +
-  geom_line(aes(x = month, y = conc))+
+  geom_line(aes(x = month, y = conc))+ # putting month back on to the x-axis 
   ylab("CO2")
 ```
 
@@ -112,7 +112,7 @@ You can store the output of the plot in a variable, too. Store the plot from 2(a
 
 ```{r, fig.width = 5, fig.height = 2}
 p +
-    geom_point(colour = "green", alpha = 0.2)
+    geom_point(colour = "green", alpha = 0.2) # changing the color to green
   
 ```
 
@@ -122,7 +122,7 @@ What's wrong with the following code? Fix it.
 
 ```{r, fig.width = 5, fig.height = 2}
 ggplot(gapminder) +
-  geom_point(x = gdpPercap, y = lifeExp, alpha = 0.1)
+  geom_point(x = gdpPercap, y = lifeExp, alpha = 0.1) # fixed the code
 ```
 
 
