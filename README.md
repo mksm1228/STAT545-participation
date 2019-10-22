@@ -1,7 +1,7 @@
 ---
 # STAT 545-participation
 
-Welcome to my STAT545 Participation Repository. This repository contains Martin Keung’s particpation files for STAT545A, a data analysis course, taught by Dr. Vincenzo Coia (@vincenzocoia) and Dr. Firas Moosvi (@firasm). I have placed the files for each class meeting (cm) into their corresponding folders. For example, files for cm002 will be in a folder called "cm002." For ease of access, the links to the files required from each class meeting are posted below. 
+Welcome to my STAT545 Participation Repository. This repository contains Martin Keung’s participation files for STAT545A, a data analysis course, taught by Dr. Vincenzo Coia (@vincenzocoia) and Dr. Firas Moosvi (@firasm). I have placed the files for each class meeting (cm) into their corresponding folders. For example, files for cm002 will be in a folder called "cm002." For ease of access, the links to the files required from each class meeting are posted below. 
 
 **Class Meeting 1: Introduction to STAT545 and Github**
 - [x] Register a Github account
